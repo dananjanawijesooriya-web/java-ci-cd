@@ -2,11 +2,11 @@ name: "Java Build Action"
 
 description: "Compile and run Java program"
 
-runs: 
+runs:
   using: "composite"
-  step:
+  steps:
     - name: Compile Java
-      run: javac Main.javac
+      run: javac Main.java
       shell: bash
 
     - name: Run Java
